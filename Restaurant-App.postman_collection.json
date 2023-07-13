@@ -1,0 +1,1599 @@
+{
+	"info": {
+		"_postman_id": "430f5e20-1ba7-4b33-9e32-3bc5f30b02f3",
+		"name": "Mealy-App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26763835",
+		"_collection_link": "https://universal-desert-991273.postman.co/workspace/8814c3d2-3046-4eef-9bf7-7edc03f0bcb3/collection/26763835-430f5e20-1ba7-4b33-9e32-3bc5f30b02f3?action=share&creator=26763835&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "User SignUP",
+					"item": [
+						{
+							"name": "https://mealyapp-bdev.onrender.com/api/v1/user/Signup",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userName\": \"general\",\r\n    \"email\": \"benitaekeneokikere@yahoo.com\",\r\n    \"password\": \"hPurtukhg3#\",\r\n    \"userAddress\": \"12 peoples street\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://mealyapp-bdev.onrender.com/api/v1/user/Signup"
+							},
+							"response": [
+								{
+									"name": "user-general",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"userName\": \"general\",\r\n    \"email\": \"benitaekeneokikere@yahoo.com\",\r\n    \"password\": \"hPurtukhg3#\",\r\n    \"userAddress\": \"12 peoples street\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://mealyapp-bdev.onrender.com/api/v1/user/Signup"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"message\": \"User created successfully\",\r\n    \"status\": \"Success\",\r\n    \"data\": {\r\n        \"user\": {\r\n            \"userName\": \"general\",\r\n            \"email\": \"benitaekeneokikere@yahoo.com\",\r\n            \"password\": \"$2b$10$5nsw4FwzzcUMpYEYpkI8EO9FtBUfSruq/X3P9sioJNbnGGQqHhTH2\",\r\n            \"userAddress\": \"12 peoples street\",\r\n            \"_id\": \"647899d5b6dae03f4d52535d\",\r\n            \"createdAt\": \"2023-06-01T13:15:01.386Z\",\r\n            \"updatedAt\": \"2023-06-01T13:15:01.386Z\",\r\n            \"__v\": 0\r\n        },\r\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDc4OTlkNWI2ZGFlMDNmNGQ1MjUzNWQiLCJlbWFpbCI6ImJlbml0YWVrZW5lb2tpa2VyZUB5YWhvby5jb20iLCJ1c2VyTmFtZSI6ImdlbmVyYWwiLCJpYXQiOjE2ODU2MjUzMDEsImV4cCI6MTY4NTcxMTcwMX0.29Ht0Oyi_NRKm-Z6NIRJ2pq1Nzpp-hnXUnlm3OU2I8o\"\r\n    }\r\n}"
+								},
+								{
+									"name": "general123",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"userName\": \"general23\",\r\n    \"email\": \"benitaekene@gmail.com\",\r\n    \"password\": \"hPurtukhg3c#\",\r\n    \"userAddress\": \"12 peoples Avenue\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://mealyapp-bdev.onrender.com/api/v1/user/Signup"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"message\": \"User created successfully\",\r\n    \"status\": \"Success\",\r\n    \"data\": {\r\n        \"user\": {\r\n            \"userName\": \"general23\",\r\n            \"email\": \"benitaekene@gmail.com\",\r\n            \"password\": \"$2b$10$xSHsINoO3QO1Iv9.VOWqCuUhF8556QEMcAtlI9KePPAnDAiugtW5.\",\r\n            \"userAddress\": \"12 peoples Avenue\",\r\n            \"_id\": \"647b555b99be08c1e45cbf13\",\r\n            \"createdAt\": \"2023-06-03T14:59:39.144Z\",\r\n            \"updatedAt\": \"2023-06-03T14:59:39.144Z\",\r\n            \"__v\": 0\r\n        },\r\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDdiNTU1Yjk5YmUwOGMxZTQ1Y2JmMTMiLCJlbWFpbCI6ImJlbml0YWVrZW5lQGdtYWlsLmNvbSIsInVzZXJOYW1lIjoiZ2VuZXJhbDIzIiwiaWF0IjoxNjg1ODA0Mzc5LCJleHAiOjE2ODU4OTA3Nzl9.NCskH1EWYDsCW8g8YiL9g8dc-dzt0tkBDnkbW9jPIkc\"\r\n    }\r\n}"
+								}
+							]
+						},
+						{
+							"name": "https://mealyapp-bdev.onrender.com/api/v1/user/Signup",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userName\": \"Anabel\",\r\n    \"email\": \"estelas@gmail.com\",\r\n    \"password\": \"hPurtukhrg3#\",\r\n    \"userAddress\": \"13 Geopeoples street\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://mealyapp-bdev.onrender.com/api/v1/user/Signup"
+							},
+							"response": [
+								{
+									"name": "Anabel-user",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"userName\": \"Anabel\",\r\n    \"email\": \"estelas@gmail.com\",\r\n    \"password\": \"hPurtukhrg3#\",\r\n    \"userAddress\": \"13 Geopeoples street\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://mealyapp-bdev.onrender.com/api/v1/user/Signup"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"message\": \"User created successfully\",\r\n    \"status\": \"Success\",\r\n    \"data\": {\r\n        \"user\": {\r\n            \"userName\": \"Anabel\",\r\n            \"email\": \"estelas@gmail.com\",\r\n            \"password\": \"$2b$10$kdCMjdU2CVtdSBmVjNohzOvGZpAe1I4BA15DI3m9YDbXWz7fK6T.6\",\r\n            \"userAddress\": \"13 Geopeoples street\",\r\n            \"_id\": \"6479b4022ac2bfdd3d2cdd59\",\r\n            \"createdAt\": \"2023-06-02T09:18:58.794Z\",\r\n            \"updatedAt\": \"2023-06-02T09:18:58.794Z\",\r\n            \"__v\": 0\r\n        },\r\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDc5YjQwMjJhYzJiZmRkM2QyY2RkNTkiLCJlbWFpbCI6ImVzdGVsYXNAZ21haWwuY29tIiwidXNlck5hbWUiOiJBbmFiZWwiLCJpYXQiOjE2ODU2OTc1MzgsImV4cCI6MTY4NTc4MzkzOH0.efqtSx98416kBvt9UPxNo6fk6o_LpRyF6nAhb1xC6Bc\"\r\n    }\r\n}"
+								}
+							]
+						},
+						{
+							"name": "Render-January",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userName\": \"January\",\r\n    \"email\": \"benitaekeneokikere@gmail.com\",\r\n    \"password\": \"Weldon#24\",\r\n    \"userAddress\": \"23 tyy-lane\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://meally-api.onrender.com/api/v1/user/Signup"
+							},
+							"response": [
+								{
+									"name": "Render-January",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"userName\": \"January\",\r\n    \"email\": \"benitaekeneokikere@gmail.com\",\r\n    \"password\": \"Weldon#24\",\r\n    \"userAddress\": \"23 tyy-lane\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://meally-api.onrender.com/api/v1/user/Signup"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"message\": \"User created successfully\",\r\n    \"status\": \"Success\",\r\n    \"data\": {\r\n        \"user\": {\r\n            \"userName\": \"january\",\r\n            \"email\": \"benitaekeneokikere@gmail.com\",\r\n            \"password\": \"$2b$10$eANp0alvSw/kJdHl8rEwqui0kB8N03.l13ncrQfeeMEaLgESdB0ku\",\r\n            \"userAddress\": \"23 tyy-lane\",\r\n            \"_id\": \"647a029042104a494ae2aebc\",\r\n            \"createdAt\": \"2023-06-02T14:54:08.721Z\",\r\n            \"updatedAt\": \"2023-06-02T14:54:08.721Z\",\r\n            \"__v\": 0\r\n        },\r\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDdhMDI5MDQyMTA0YTQ5NGFlMmFlYmMiLCJlbWFpbCI6ImJlbml0YWVrZW5lb2tpa2VyZUBnbWFpbC5jb20iLCJ1c2VyTmFtZSI6ImphbnVhcnkiLCJpYXQiOjE2ODU3MTc2NDgsImV4cCI6MTY4NTgwNDA0OH0.3hElxAdS0KAQEyRfKfNdlU6SXjzEr8h0GlrX8l9VC8w\"\r\n    }\r\n}"
+								}
+							]
+						},
+						{
+							"name": "https://mealyapp-bdev.onrender.com/api/v1/user/Signup",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userName\": \"Api-Test\",\r\n    \"email\": \"benitaekene1@gmail.com\",\r\n    \"password\": \"Working#24\",\r\n    \"userAddress\": \"23 Mealy App\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://mealyapp-bdev.onrender.com/api/v1/user/Signup"
+							},
+							"response": [
+								{
+									"name": "API-Test",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"userName\": \"Api-Test\",\r\n    \"email\": \"benitaekene1@gmail.com\",\r\n    \"password\": \"Working#24\",\r\n    \"userAddress\": \"23 Mealy App\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://mealyapp-bdev.onrender.com/api/v1/user/Signup"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"message\": \"User created successfully\",\r\n    \"status\": \"Success\",\r\n    \"data\": {\r\n        \"user\": {\r\n            \"userName\": \"Api-Test\",\r\n            \"email\": \"benitaekene1@gmail.com\",\r\n            \"password\": \"$2b$10$LXKk.M/AbDD1nKvCfs8oeO21dqCUOI2sPQYBSYlZ3TJ88XAC3jcF2\",\r\n            \"userAddress\": \"23 Mealy App\",\r\n            \"_id\": \"64822ef836aa681444418684\",\r\n            \"createdAt\": \"2023-06-08T19:41:44.529Z\",\r\n            \"updatedAt\": \"2023-06-08T19:41:44.529Z\",\r\n            \"__v\": 0\r\n        },\r\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgyMmVmODM2YWE2ODE0NDQ0MTg2ODQiLCJlbWFpbCI6ImJlbml0YWVrZW5lMUBnbWFpbC5jb20iLCJ1c2VyTmFtZSI6IkFwaS1UZXN0IiwiaWF0IjoxNjg2MjUzMzA0LCJleHAiOjE2ODYzMzk3MDR9.pcPDYBZoWM8JnhMuB5LRKQUqRcX6vqoqSzD7uqtdx10\"\r\n    }\r\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "User Login",
+					"item": [
+						{
+							"name": "https://mealyapp-bdev.onrender.com/api/v1/user/login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n     \"email\": \"benitaekeneokikere@yahoo.com\",\r\n    \"password\": \"hPurtukhg3#\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://mealyapp-bdev.onrender.com/api/v1/user/login"
+							},
+							"response": [
+								{
+									"name": "login-general",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n     \"email\": \"benitaekeneokikere@yahoo.com\",\r\n    \"password\": \"hPurtukhg3#\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://mealyapp-bdev.onrender.com/api/v1/user/login"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"message\": \"User found successfully\",\r\n    \"status\": \"Success\",\r\n    \"data\": {\r\n        \"user\": {\r\n            \"_id\": \"647899d5b6dae03f4d52535d\",\r\n            \"userName\": \"general\",\r\n            \"email\": \"benitaekeneokikere@yahoo.com\",\r\n            \"password\": \"$2b$10$5nsw4FwzzcUMpYEYpkI8EO9FtBUfSruq/X3P9sioJNbnGGQqHhTH2\",\r\n            \"userAddress\": \"12 peoples street\",\r\n            \"createdAt\": \"2023-06-01T13:15:01.386Z\",\r\n            \"updatedAt\": \"2023-06-01T13:15:01.386Z\",\r\n            \"__v\": 0\r\n        },\r\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDc4OTlkNWI2ZGFlMDNmNGQ1MjUzNWQiLCJlbWFpbCI6ImJlbml0YWVrZW5lb2tpa2VyZUB5YWhvby5jb20iLCJ1c2VyTmFtZSI6ImdlbmVyYWwiLCJpYXQiOjE2ODU2MjU3NDIsImV4cCI6MTY4NTcxMjE0Mn0.JoFrOzScB_eXQr1A5uYX7hRq9Qb1LseMm4Gp4hU7xL8\"\r\n    }\r\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "forgotPassword",
+					"item": [
+						{
+							"name": "https://mealyapp-bdev.onrender.com/api/v1/user/forgotPassword",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"benitaekeneokikere@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://mealyapp-bdev.onrender.com/api/v1/user/forgotPassword"
+							},
+							"response": [
+								{
+									"name": "password Reset",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"email\": \"benitaekeneokikere@gmail.com\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://mealyapp-bdev.onrender.com/api/v1/user/forgotPassword"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "Password reset link sent to your email account"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "userLogout",
+					"item": [
+						{
+							"name": "https://mealyapp-bdev.onrender.com/api/v1/user/logout",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\": \"egye73097ghlub;k8my1hog912p\",\r\n    \"token\": \"srdjtfknyglmuh;nyetsdritfunylgimuhhtvxrcbjytknuvyibmun36547uriy536w74vudrcbfvhjgn64eyrdbfhgvjnhb\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://mealyapp-bdev.onrender.com/api/v1/user/logout"
+							},
+							"response": [
+								{
+									"name": "https://mealyapp-bdev.onrender.com/api/v1/user/logout",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"userId\": \"egye73097ghlub;k8my1hog912p\",\r\n    \"token\": \"srdjtfknyglmuh;nyetsdritfunylgimuhhtvxrcbjytknuvyibmun36547uriy536w74vudrcbfvhjgn64eyrdbfhgvjnhb\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://mealyapp-bdev.onrender.com/api/v1/user/logout"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"message\": \"Token deleted successfully\",\r\n    \"status\": \"Success\"\r\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "reset password",
+					"item": [
+						{
+							"name": "https://mealyapp-bdev.onrender.com/api/v1/user/password-reset/64843e667aad2931a9da5ee7/f0b3e483dae86babe203dd9cff403067f2a95dd9f97cb4e37d73ff6ecd33889c",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"benitaekeneokikere@gmail.com\",\r\n    \"password\": \"Password44#\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://mealyapp-bdev.onrender.com/api/v1/user/password-reset/64843e667aad2931a9da5ee7/f0b3e483dae86babe203dd9cff403067f2a95dd9f97cb4e37d73ff6ecd33889c"
+							},
+							"response": [
+								{
+									"name": "https://mealyapp-bdev.onrender.com/api/v1/user/password-reset/64843e667aad2931a9da5ee7/f0b3e483dae86babe203dd9cff403067f2a95dd9f97cb4e37d73ff6ecd33889c",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"email\": \"benitaekeneokikere@gmail.com\",\r\n    \"password\": \"Password44#\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://mealyapp-bdev.onrender.com/api/v1/user/password-reset/64843e667aad2931a9da5ee7/f0b3e483dae86babe203dd9cff403067f2a95dd9f97cb4e37d73ff6ecd33889c"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "Password reset is successful."
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "User Update",
+					"item": [
+						{
+							"name": "https://mealyapp-bdev.onrender.com/api/v1/user/647b555b99be08c1e45cbf13",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"estelas.com@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://mealyapp-bdev.onrender.com/api/v1/user/647b555b99be08c1e45cbf13"
+							},
+							"response": [
+								{
+									"name": "https://mealyapp-bdev.onrender.com/api/v1/user/647b555b99be08c1e45cbf13",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"email\": \"estelas.com@gmail.com\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://mealyapp-bdev.onrender.com/api/v1/user/647b555b99be08c1e45cbf13"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"message\": \"User updated successfully\",\r\n    \"status\": \"Success\",\r\n    \"data\": {\r\n        \"user\": {\r\n            \"_id\": \"647b555b99be08c1e45cbf13\",\r\n            \"userName\": \"general23\",\r\n            \"email\": \"estelas.com@gmail.com\",\r\n            \"password\": \"$2b$10$xSHsINoO3QO1Iv9.VOWqCuUhF8556QEMcAtlI9KePPAnDAiugtW5.\",\r\n            \"userAddress\": \"12 peoples Avenue\",\r\n            \"createdAt\": \"2023-06-03T14:59:39.144Z\",\r\n            \"updatedAt\": \"2023-06-24T11:15:41.278Z\",\r\n            \"__v\": 0\r\n        }\r\n    }\r\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "OTP Activation",
+					"item": [
+						{
+							"name": "https://mealyapp-bdev.onrender.com/api/v1/user/otpActivation",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"otp\": \"0376\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://mealyapp-bdev.onrender.com/api/v1/user/otpActivation"
+							},
+							"response": [
+								{
+									"name": "https://mealyapp-bdev.onrender.com/api/v1/user/otpActivation",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"otp\": \"0376\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://mealyapp-bdev.onrender.com/api/v1/user/otpActivation"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"message\": \"User created successfully.\",\r\n    \"status\": \"Success\"\r\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Home-restaurant",
+			"item": [
+				{
+					"name": "Create-Restaurant",
+					"item": [
+						{
+							"name": "Error creating restaurant",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n     \"customer\": \"647b555b99be08c1e45cbf13\",\r\n    \"customerId\": \"647b555b99be08c1e45cbf13\",\r\n    \"name\": \"Global Tastes\",\r\n    \"category\": \"Cafe\",\r\n    \"restaurantAddress\": \"23 Elizade Avenue\",\r\n    \"contactInfo\": \"+1000-455-0986\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/create"
+							},
+							"response": [
+								{
+									"name": "Create Restaurant",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n     \"customer\": \"647b555b99be08c1e45cbf13\",\r\n    \"customerId\": \"647b555b99be08c1e45cbf13\",\r\n    \"name\": \"Global Tastes\",\r\n    \"category\": \"Cafe\",\r\n    \"restaurantAddress\": \"23 Elizade Avenue\",\r\n    \"contactInfo\": \"+1000-455-0986\"\r\n\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/create"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"message\": \"Restaurant created successfully\",\r\n    \"status\": \"Success\",\r\n    \"data\": {\r\n        \"restaurant\": {\r\n            \"name\": \"Global Tastes\",\r\n            \"category\": \"Cafe\",\r\n            \"restaurantAddress\": \"23 Elizade Avenue\",\r\n            \"contactInfo\": \"+1000-455-0986\",\r\n            \"customer\": \"647b555b99be08c1e45cbf13\",\r\n            \"customerId\": \"647b555b99be08c1e45cbf13\",\r\n            \"_id\": \"647b73d2fb2b173ca0d480c0\",\r\n            \"createdAt\": \"2023-06-03T17:09:38.977Z\",\r\n            \"updatedAt\": \"2023-06-03T17:09:38.977Z\",\r\n            \"__v\": 0\r\n        }\r\n    }\r\n}"
+								}
+							]
+						},
+						{
+							"name": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/create",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customer\": \"6483db2c4f897e5f0c0b872a\",\r\n    \"customerId\": \"6483db2c4f897e5f0c0b872a\",\r\n    \"name\": \"Tasty class\",\r\n    \"category\": \"frenches\",\r\n    \"restaurantAddress\": \"23 Juvenic Avenue\",\r\n    \"contactInfo\": \"+1000-455-0986\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/create"
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDhkNDdiZTM4NDE0ODYxNjdmMTVmNjkiLCJlbWFpbCI6InNvdWwuYm9keS5tdWVzaWNzQGdtYWlsLmNvbSIsInVzZXJOYW1lIjoiQWRtaW4iLCJpYXQiOjE2ODY5ODA1NDIsImV4cCI6MTY4NzA2Njk0Mn0.JvAsrsGGG8oZw0K8FwRNPJvnqfoK-R42b-GmQdrL1yY"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customer\": \"648d39647770602c8b1f9818\",\r\n     \"customerId\": \"648d39647770602c8b1f9818\",\r\n     \"name\": \"Chinese\",\r\n     \"category\": {\r\n         \"menu\": \"64832db76b2575af5f74916e\",\r\n        \"rating\": 4\r\n         },\r\n    \"restaurantAddress\": \"23 Reagali Avenue\",\r\n    \"contactInfo\": \"0100 456 0090\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/create"
+							},
+							"response": [
+								{
+									"name": "Chinese restaurant",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"customer\": \"648d39647770602c8b1f9818\",\r\n     \"customerId\": \"648d39647770602c8b1f9818\",\r\n     \"name\": \"Chinese\",\r\n     \"category\": {\r\n         \"menu\": \"64832db76b2575af5f74916e\",\r\n        \"rating\": 4\r\n         },\r\n    \"restaurantAddress\": \"23 Reagali Avenue\",\r\n    \"contactInfo\": \"0100 456 0090\"\r\n\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/create"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"message\": \"Restaurant registered successfully\",\r\n    \"status\": \"Success\",\r\n    \"data\": {\r\n        \"restaurant\": {\r\n            \"name\": \"Chinese\",\r\n            \"category\": [\r\n                {\r\n                    \"menu\": \"64832db76b2575af5f74916e\",\r\n                    \"rating\": 4,\r\n                    \"_id\": \"648d47dc3841486167f15f6e\"\r\n                }\r\n            ],\r\n            \"restaurantAddress\": \"23 Reagali Avenue\",\r\n            \"contactInfo\": \"0100 456 0090\",\r\n            \"customer\": \"648d39647770602c8b1f9818\",\r\n            \"customerId\": \"648d39647770602c8b1f9818\",\r\n            \"_id\": \"648d47dc3841486167f15f6d\",\r\n            \"createdAt\": \"2023-06-17T05:42:52.488Z\",\r\n            \"updatedAt\": \"2023-06-17T05:42:52.488Z\",\r\n            \"__v\": 0\r\n        },\r\n        \"vendor_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDhkNDdkYzM4NDE0ODYxNjdmMTVmNmQiLCJuYW1lIjoiQ2hpbmVzZSIsInJlc3RhdXJhbnRBZGRyZXNzIjoiMjMgUmVhZ2FsaSBBdmVudWUiLCJjb250YWN0SW5mbyI6IjAxMDAgNDU2IDAwOTAiLCJpYXQiOjE2ODY5ODA1NzJ9.e-MmLGEAjrc-nkHM7v1_kws1japMz1jyRaSV-X8Bjyw\"\r\n    }\r\n}"
+								}
+							]
+						},
+						{
+							"name": "update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDhkNDdiZTM4NDE0ODYxNjdmMTVmNjkiLCJlbWFpbCI6InNvdWwuYm9keS5tdWVzaWNzQGdtYWlsLmNvbSIsInVzZXJOYW1lIjoiQWRtaW4iLCJpYXQiOjE2ODY5ODA1NDIsImV4cCI6MTY4NzA2Njk0Mn0.JvAsrsGGG8oZw0K8FwRNPJvnqfoK-R42b-GmQdrL1yY"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customer\": \"648d39647770602c8b1f9818\",\r\n    \"customerId\": \"648d39647770602c8b1f9818\",\r\n    \"name\": \"Yukoo Mea;s\",\r\n    \"category\": \"Chinese\",\r\n    \"menu\": [\r\n        \"Egg Drop Soup\",\r\n        \"Dim Sum (assorted steamed or fried dumplings)\",\r\n        \"Peking Duck\",\r\n        \"Ma Po Dou Fu (Spicy Tofu)\",\r\n        \"Moo Shu Pork\",\r\n        \"Szechuan Beef\",\r\n        \"Shrimp with Lobster Sauce\",\r\n        \"Chicken Chow Mein\",\r\n        \"Steamed Fish with Ginger and Scallions\",\r\n        \"Sesame Chicken\",\r\n        \"Crispy Fried Spring Rolls\"\r\n    ],\r\n    \"restaurantAddress\": \"23 Reagali Avenue\",\r\n    \"contactInfo\": \"0100 456 0090\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/create"
+							},
+							"response": [
+								{
+									"name": "Chinese restaurant",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"customer\": \"648d39647770602c8b1f9818\",\r\n     \"customerId\": \"648d39647770602c8b1f9818\",\r\n     \"name\": \"Chinese\",\r\n     \"category\": {\r\n         \"menu\": \"64832db76b2575af5f74916e\",\r\n        \"rating\": 4\r\n         },\r\n    \"restaurantAddress\": \"23 Reagali Avenue\",\r\n    \"contactInfo\": \"0100 456 0090\"\r\n\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/create"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"message\": \"Restaurant registered successfully\",\r\n    \"status\": \"Success\",\r\n    \"data\": {\r\n        \"restaurant\": {\r\n            \"name\": \"Chinese\",\r\n            \"category\": [\r\n                {\r\n                    \"menu\": \"64832db76b2575af5f74916e\",\r\n                    \"rating\": 4,\r\n                    \"_id\": \"648d47dc3841486167f15f6e\"\r\n                }\r\n            ],\r\n            \"restaurantAddress\": \"23 Reagali Avenue\",\r\n            \"contactInfo\": \"0100 456 0090\",\r\n            \"customer\": \"648d39647770602c8b1f9818\",\r\n            \"customerId\": \"648d39647770602c8b1f9818\",\r\n            \"_id\": \"648d47dc3841486167f15f6d\",\r\n            \"createdAt\": \"2023-06-17T05:42:52.488Z\",\r\n            \"updatedAt\": \"2023-06-17T05:42:52.488Z\",\r\n            \"__v\": 0\r\n        },\r\n        \"vendor_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDhkNDdkYzM4NDE0ODYxNjdmMTVmNmQiLCJuYW1lIjoiQ2hpbmVzZSIsInJlc3RhdXJhbnRBZGRyZXNzIjoiMjMgUmVhZ2FsaSBBdmVudWUiLCJjb250YWN0SW5mbyI6IjAxMDAgNDU2IDAwOTAiLCJpYXQiOjE2ODY5ODA1NzJ9.e-MmLGEAjrc-nkHM7v1_kws1japMz1jyRaSV-X8Bjyw\"\r\n    }\r\n}"
+								}
+							]
+						},
+						{
+							"name": "deliveryCategory",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDkzNDNhMzE5MDcxZGQ3YzNiYjYzNGMiLCJlbWFpbCI6ImJlbml0YWVlb2tpa2VyZUBnbWFpbC5jb20iLCJ1c2VyTmFtZSI6Ildpbm5lciIsImlhdCI6MTY4NzM3MjcwOCwiZXhwIjoxNjg3NDU5MTA4fQ.Fg312SsPe0HtG0nA3IHI-s5zkQ2Gzr_4mSJanbhHzds"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customer\": \"648d39647770602c8b1f9818\",\r\n    \"customerId\": \"648d39647770602c8b1f9818\",\r\n    \"name\": \"Dano Yums\",\r\n    \"category\": \"Chinese\",\r\n    \"deliveryCategory\": \"Bulk Order\",\r\n    \"menu\": [\r\n        \"Egg Drop Soup\",\r\n        \"Dim Sum (assorted steamed or fried dumplings)\",\r\n        \"Peking Duck\",\r\n        \"Ma Po Dou Fu (Spicy Tofu)\",\r\n        \"Moo Shu Pork\",\r\n        \"Szechuan Beef\",\r\n        \"Shrimp with Lobster Sauce\",\r\n        \"Chicken Chow Mein\",\r\n        \"Steamed Fish with Ginger and Scallions\",\r\n        \"Sesame Chicken\",\r\n        \"Crispy Fried Spring Rolls\"\r\n    ],\r\n    \"restaurantAddress\": \"First Peagali Lounge\",\r\n    \"contactInfo\": \"0100 456 0090\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:4000/api/v1/restaurant/create"
+							},
+							"response": [
+								{
+									"name": "deliveryCategory",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"customer\": \"648d39647770602c8b1f9818\",\r\n    \"customerId\": \"648d39647770602c8b1f9818\",\r\n    \"name\": \"Dano Yums\",\r\n    \"category\": \"Chinese\",\r\n    \"deliveryCategory\": \"Bulk Order\",\r\n    \"menu\": [\r\n        \"Egg Drop Soup\",\r\n        \"Dim Sum (assorted steamed or fried dumplings)\",\r\n        \"Peking Duck\",\r\n        \"Ma Po Dou Fu (Spicy Tofu)\",\r\n        \"Moo Shu Pork\",\r\n        \"Szechuan Beef\",\r\n        \"Shrimp with Lobster Sauce\",\r\n        \"Chicken Chow Mein\",\r\n        \"Steamed Fish with Ginger and Scallions\",\r\n        \"Sesame Chicken\",\r\n        \"Crispy Fried Spring Rolls\"\r\n    ],\r\n    \"restaurantAddress\": \"First Peagali Lounge\",\r\n    \"contactInfo\": \"0100 456 0090\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "http://localhost:4000/api/v1/restaurant/create"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"message\": \"Restaurant registered successfully\",\r\n    \"status\": \"Success\",\r\n    \"data\": {\r\n        \"restaurant\": {\r\n            \"name\": \"Dano Yums\",\r\n            \"category\": \"Chinese\",\r\n            \"deliveryCategory\": \"Bulk Order\",\r\n            \"menu\": [\r\n                \"Egg Drop Soup\",\r\n                \"Dim Sum (assorted steamed or fried dumplings)\",\r\n                \"Peking Duck\",\r\n                \"Ma Po Dou Fu (Spicy Tofu)\",\r\n                \"Moo Shu Pork\",\r\n                \"Szechuan Beef\",\r\n                \"Shrimp with Lobster Sauce\",\r\n                \"Chicken Chow Mein\",\r\n                \"Steamed Fish with Ginger and Scallions\",\r\n                \"Sesame Chicken\",\r\n                \"Crispy Fried Spring Rolls\"\r\n            ],\r\n            \"restaurantAddress\": \"First Peagali Lounge\",\r\n            \"contactInfo\": \"0100 456 0090\",\r\n            \"customer\": \"648d39647770602c8b1f9818\",\r\n            \"customerId\": \"648d39647770602c8b1f9818\",\r\n            \"_id\": \"64934404f3b736e8ac1c1465\",\r\n            \"createdAt\": \"2023-06-21T18:40:04.558Z\",\r\n            \"updatedAt\": \"2023-06-21T18:40:04.558Z\",\r\n            \"__v\": 0\r\n        },\r\n        \"vendor_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDkzNDQwNGYzYjczNmU4YWMxYzE0NjUiLCJuYW1lIjoiRGFubyBZdW1zIiwicmVzdGF1cmFudEFkZHJlc3MiOiJGaXJzdCBQZWFnYWxpIExvdW5nZSIsImNvbnRhY3RJbmZvIjoiMDEwMCA0NTYgMDA5MCIsImlhdCI6MTY4NzM3MjgwNH0.R-d7Afb4BZ-18t4ugHODTWVaHekgmK4KJasvXq7jtr0\"\r\n    }\r\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Search Restaurant",
+					"item": [
+						{
+							"name": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/category/?category=cafe",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/category/?category=cafe",
+									"protocol": "https",
+									"host": [
+										"mealyapp-bdev",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"v1",
+										"restaurant",
+										"category",
+										""
+									],
+									"query": [
+										{
+											"key": "category",
+											"value": "cafe"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Search restaurant by category",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/category/?category=cafe",
+											"protocol": "https",
+											"host": [
+												"mealyapp-bdev",
+												"onrender",
+												"com"
+											],
+											"path": [
+												"api",
+												"v1",
+												"restaurant",
+												"category",
+												""
+											],
+											"query": [
+												{
+													"key": "category",
+													"value": "cafe"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"message\": \"Restaurant found successfully\",\r\n    \"status\": \"Success\",\r\n    \"data\": {\r\n        \"restaurant\": {\r\n            \"_id\": \"6479c7e3eb0a3b19cc935aff\",\r\n            \"name\": \"japanese cuisine\",\r\n            \"restaurantAddress\": \"12 Icon  Close\",\r\n            \"contactInfo\": \"+122-0100-334\",\r\n            \"customer\": \"647899d5b6dae03f4d52535d\",\r\n            \"customerId\": \"647899d5b6dae03f4d52535d\",\r\n            \"createdAt\": \"2023-06-02T10:43:47.848Z\",\r\n            \"updatedAt\": \"2023-06-02T10:43:47.848Z\",\r\n            \"__v\": 0\r\n        }\r\n    }\r\n}"
+								}
+							]
+						},
+						{
+							"name": "http://localhost:4000/api/v1/restaurant/keyword/?restaurants=346-0000-45",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDdlOGFkZGZkNWU0NWUwZWZmMWExNmIiLCJlbWFpbCI6ImJlbml0YWVrZW9raWtlcmVAeWFob28uY29tIiwidXNlck5hbWUiOiJDbGF1ZGVsIiwiaWF0IjoxNjg2MDE0Njg2LCJleHAiOjE2ODYxMDEwODZ9.PHDkLtCTo36P_ThcTF_ngaTN9qvPuWNP2A_mqtrfXhw"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/v1/restaurant/keyword/?restaurants=346-0000-45",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"v1",
+										"restaurant",
+										"keyword",
+										""
+									],
+									"query": [
+										{
+											"key": "restaurants",
+											"value": "346-0000-45"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/keyword/?restaurants=Cafe",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgyMmVmODM2YWE2ODE0NDQ0MTg2ODQiLCJlbWFpbCI6ImJlbml0YWVrZW5lMUBnbWFpbC5jb20iLCJ1c2VyTmFtZSI6IkFwaS1UZXN0IiwiaWF0IjoxNjg2MjUzMzA0LCJleHAiOjE2ODYzMzk3MDR9.pcPDYBZoWM8JnhMuB5LRKQUqRcX6vqoqSzD7uqtdx10"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/keyword/?restaurants=Cafe",
+									"protocol": "https",
+									"host": [
+										"mealyapp-bdev",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"v1",
+										"restaurant",
+										"keyword",
+										""
+									],
+									"query": [
+										{
+											"key": "restaurants",
+											"value": "Cafe"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "search by category",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/category/?category=cafe",
+									"protocol": "https",
+									"host": [
+										"mealyapp-bdev",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"v1",
+										"restaurant",
+										"category",
+										""
+									],
+									"query": [
+										{
+											"key": "category",
+											"value": "cafe"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "search by category",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDdlOGFkZGZkNWU0NWUwZWZmMWExNmIiLCJlbWFpbCI6ImJlbml0YWVrZW9raWtlcmVAeWFob28uY29tIiwidXNlck5hbWUiOiJDbGF1ZGVsIiwiaWF0IjoxNjg2MDE0Njg2LCJleHAiOjE2ODYxMDEwODZ9.PHDkLtCTo36P_ThcTF_ngaTN9qvPuWNP2A_mqtrfXhw"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/v1/restaurant/category/?category=Crunches",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"v1",
+										"restaurant",
+										"category",
+										""
+									],
+									"query": [
+										{
+											"key": "category",
+											"value": "Crunches"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "search all restaurants",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/all-restaurants"
+							},
+							"response": []
+						},
+						{
+							"name": "Search restaurant by Keyword using restaurant name",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/keyword/?restaurants=Delicious Tastes",
+									"protocol": "https",
+									"host": [
+										"mealyapp-bdev",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"v1",
+										"restaurant",
+										"keyword",
+										""
+									],
+									"query": [
+										{
+											"key": "restaurants",
+											"value": "Delicious Tastes"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "search all restaurants",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/all-restaurants"
+							},
+							"response": []
+						},
+						{
+							"name": "Search Restaurants By users that created them",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/searchBycreator/?id=6483db2c4f897e5f0c0b872a",
+									"protocol": "https",
+									"host": [
+										"mealyapp-bdev",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"v1",
+										"restaurant",
+										"searchBycreator",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "6483db2c4f897e5f0c0b872a"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search restaurant by category property",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": ""
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/category/?category=Cafe",
+									"protocol": "https",
+									"host": [
+										"mealyapp-bdev",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"v1",
+										"restaurant",
+										"category",
+										""
+									],
+									"query": [
+										{
+											"key": "category",
+											"value": "Cafe"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search restaurant by Keyword examp;e reataurant name",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/keyword/?restaurants=Tasty class",
+									"protocol": "https",
+									"host": [
+										"mealyapp-bdev",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"v1",
+										"restaurant",
+										"keyword",
+										""
+									],
+									"query": [
+										{
+											"key": "restaurants",
+											"value": "Tasty class"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search restaurant by Keywosd",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/keyword/?restaurants=346-0000-45",
+									"protocol": "https",
+									"host": [
+										"mealyapp-bdev",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"v1",
+										"restaurant",
+										"keyword",
+										""
+									],
+									"query": [
+										{
+											"key": "restaurants",
+											"value": "346-0000-45"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Delete-Restaurant",
+					"item": [
+						{
+							"name": "Delete restaurant",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+									}
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/delete/?id=6479c7e3eb0a3b19cc935aff",
+									"protocol": "https",
+									"host": [
+										"mealyapp-bdev",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"v1",
+										"restaurant",
+										"delete",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "6479c7e3eb0a3b19cc935aff"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "update-restaurant",
+					"item": [
+						{
+							"name": "http://localhost:4000/api/v1/restaurant/update/?id=647af38c54dee2d046f9c700",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDdlOGFkZGZkNWU0NWUwZWZmMWExNmIiLCJlbWFpbCI6ImJlbml0YWVrZW9raWtlcmVAeWFob28uY29tIiwidXNlck5hbWUiOiJDbGF1ZGVsIiwiaWF0IjoxNjg2MDE0Njg2LCJleHAiOjE2ODYxMDEwODZ9.PHDkLtCTo36P_ThcTF_ngaTN9qvPuWNP2A_mqtrfXhw"
+									}
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customer\": \"647e8addfd5e45e0eff1a16b\",\r\n     \"customerId\": \"647e8addfd5e45e0eff1a16b\",\r\n      \"name\": \"Dynasty Meals\",\r\n     \"category\": \"Crunches\",\r\n            \"restaurantAddress\": \"34 Ero Main\",\r\n            \"contactInfo\": \"346-0000-345\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/v1/restaurant/update/?id=647af38c54dee2d046f9c700",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"v1",
+										"restaurant",
+										"update",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "647af38c54dee2d046f9c700"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "from African pot to dynasty meals",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"customer\": \"647e8addfd5e45e0eff1a16b\",\r\n     \"customerId\": \"647e8addfd5e45e0eff1a16b\",\r\n      \"name\": \"Dynasty Meals\",\r\n     \"category\": \"Crunches\",\r\n            \"restaurantAddress\": \"34 Ero Main\",\r\n            \"contactInfo\": \"346-0000-345\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:4000/api/v1/restaurant/update/?id=647af38c54dee2d046f9c700",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "4000",
+											"path": [
+												"api",
+												"v1",
+												"restaurant",
+												"update",
+												""
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "647af38c54dee2d046f9c700"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"message\": \"Restaurant updated successfully\",\r\n    \"status\": \"Success\",\r\n    \"data\": {\r\n        \"restaurant\": {\r\n            \"_id\": \"647af38c54dee2d046f9c700\",\r\n            \"name\": \"Dynasty Meals\",\r\n            \"category\": \"Crunches\",\r\n            \"restaurantAddress\": \"34 Ero Main\",\r\n            \"contactInfo\": \"346-0000-345\",\r\n            \"customer\": \"647e8addfd5e45e0eff1a16b\",\r\n            \"customerId\": \"647e8addfd5e45e0eff1a16b\",\r\n            \"createdAt\": \"2023-06-03T08:02:20.314Z\",\r\n            \"updatedAt\": \"2023-06-06T08:38:18.579Z\",\r\n            \"__v\": 0\r\n        }\r\n    }\r\n}"
+								}
+							]
+						},
+						{
+							"name": "Update restaurant",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+									}
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n     \"customer\": \"64822ef836aa681444418684\",\r\n    \"customerId\": \"64822ef836aa681444418684\",\r\n    \"name\": \"Delicious Tastes\",\r\n    \"category\": \"Buffet\",\r\n    \"restaurantAddress\": \"23 Grorry Avenue\",\r\n    \"contactInfo\": \"+1000-455-0986\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/update/?id=6482318836aa681444418688",
+									"protocol": "https",
+									"host": [
+										"mealyapp-bdev",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"v1",
+										"restaurant",
+										"update",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "6482318836aa681444418688"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update restaurant",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+									}
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Tasty Plus\",\r\n    \"category\": \"frenches\",\r\n    \"restaurantAddress\": \"23 Juvenic Avenue\",\r\n    \"contactInfo\": \"+1000-455-0986\",\r\n    \"customer\": \"6483db2c4f897e5f0c0b872a\",\r\n    \"customerId\": \"6483db2c4f897e5f0c0b872a\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://mealyapp-bdev.onrender.com/api/v1/restaurant/update/?id=6483e3ae53fc35c220b4a149",
+									"protocol": "https",
+									"host": [
+										"mealyapp-bdev",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"v1",
+										"restaurant",
+										"update",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "6483e3ae53fc35c220b4a149"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Home-items",
+			"item": [
+				{
+					"name": "get Item details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://mealyapp-bdev.onrender.com/api/v1/item/details/6483e62353fc35c220b4a14e"
+					},
+					"response": []
+				},
+				{
+					"name": "get nutition info",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://mealyapp-bdev.onrender.com/api/v1/item/nutri-info/6483e62353fc35c220b4a14e"
+					},
+					"response": []
+				},
+				{
+					"name": "item all-reviews",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://mealyapp-bdev.onrender.com/api/v1/item/all-reviews/6483e62353fc35c220b4a14e"
+					},
+					"response": []
+				},
+				{
+					"name": "Get item by restaurant",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://mealyapp-bdev.onrender.com/api/v1/item/by-restaurant/6483e3ae53fc35c220b4a149"
+					},
+					"response": []
+				},
+				{
+					"name": "get Items by-category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://mealyapp-bdev.onrender.com/api/v1/item/by-category/6483e3ae53fc35c220b4a149/?category=quick_fixes",
+							"protocol": "https",
+							"host": [
+								"mealyapp-bdev",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"item",
+								"by-category",
+								"6483e3ae53fc35c220b4a149",
+								""
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "quick_fixes"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "Add item to Cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://mealyapp-bdev.onrender.com/api/v1/cart/add/64840c3c94b76389c00dd161"
+					},
+					"response": [
+						{
+							"name": "Add item to Cart",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://mealyapp-bdev.onrender.com/api/v1/cart/add/64840c3c94b76389c00dd161"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"message\": \"Cart successfully created for user\",\r\n    \"status\": \"Success\",\r\n    \"cart\": {\r\n        \"customer\": \"6483db2c4f897e5f0c0b872a\",\r\n        \"orders\": [\r\n            {\r\n                \"itemId\": \"64840c3c94b76389c00dd161\",\r\n                \"itemName\": \"mozat\",\r\n                \"unit_price\": 1000,\r\n                \"quantity\": 1,\r\n                \"total\": 1000,\r\n                \"_id\": \"648482ff80be124577620bfb\"\r\n            }\r\n        ],\r\n        \"subtotal\": 1000,\r\n        \"_id\": \"648482ff80be124577620bfa\",\r\n        \"createdAt\": \"2023-06-10T14:04:47.594Z\",\r\n        \"updatedAt\": \"2023-06-10T14:04:47.594Z\",\r\n        \"__v\": 0\r\n    }\r\n}"
+						}
+					]
+				},
+				{
+					"name": "View Cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://mealyapp-bdev.onrender.com/api/v1/cart/view"
+					},
+					"response": []
+				},
+				{
+					"name": "Increase Cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "https://mealyapp-bdev.onrender.com/api/v1/cart/increase/64840c3c94b76389c00dd161"
+					},
+					"response": []
+				},
+				{
+					"name": "Decrease Item in a cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "https://mealyapp-bdev.onrender.com/api/v1/cart/decrease/64840c3c94b76389c00dd161"
+					},
+					"response": []
+				},
+				{
+					"name": "Clear Cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDgzZGIyYzRmODk3ZTVmMGMwYjg3MmEiLCJlbWFpbCI6InNvdWwuYm9keS5tdXNpY3NAZ21haWwuY29tIiwidXNlck5hbWUiOiJHb0FoZWFkIiwiaWF0IjoxNjg2MzYyOTI1LCJleHAiOjE2ODY0NDkzMjV9.MDZ7act9A1K2x6zPtXFsmt7rVHrwjogxcFXredgDkeo"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "https://mealyapp-bdev.onrender.com/api/v1/cart/clear/64842e208d0dee0cc0b33d6b"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "checkout order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg0ODUwNTc3MTRmOTMyNmRmYWQzNzIiLCJlbWFpbCI6ImVzdGVsbGFzQGdtYWlsLmNvbSIsInVzZXJOYW1lIjoiQW5kZWxhIiwiaWF0IjoxNjg2NDA2NDA1LCJleHAiOjE2ODY0OTI4MDV9.N6k95CpaW-rWopk_g5YAk7WwRWkG-6qNKRP6ukO94Jc"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "https://mealyapp-bdev.onrender.com/api/v1/order/checkout/648482ff80be124577620bfa"
+					},
+					"response": []
+				},
+				{
+					"name": "Get order by user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg0ODUwNTc3MTRmOTMyNmRmYWQzNzIiLCJlbWFpbCI6ImVzdGVsbGFzQGdtYWlsLmNvbSIsInVzZXJOYW1lIjoiQW5kZWxhIiwiaWF0IjoxNjg2NDA2NDA1LCJleHAiOjE2ODY0OTI4MDV9.N6k95CpaW-rWopk_g5YAk7WwRWkG-6qNKRP6ukO94Jc"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://mealyapp-bdev.onrender.com/api/v1/order/by-user"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://mealyapp-bdev.onrender.com/api/v1/order/all"
+					},
+					"response": []
+				},
+				{
+					"name": "Reorder item",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg0ODUwNTc3MTRmOTMyNmRmYWQzNzIiLCJlbWFpbCI6ImVzdGVsbGFzQGdtYWlsLmNvbSIsInVzZXJOYW1lIjoiQW5kZWxhIiwiaWF0IjoxNjg2NDA2NDA1LCJleHAiOjE2ODY0OTI4MDV9.N6k95CpaW-rWopk_g5YAk7WwRWkG-6qNKRP6ukO94Jc"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "https://mealyapp-bdev.onrender.com/api/v1/order/reorder/64840c3c94b76389c00dd161"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
